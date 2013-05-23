@@ -41,6 +41,8 @@
   <ItemGroup>
     <Compile Include="ARTISTCAD.cs" />
     <Compile Include="ArtistEN.cs" />
+    <Compile Include="GroupCAD.cs" />
+    <Compile Include="GROUPEN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
