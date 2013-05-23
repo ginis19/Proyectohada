@@ -1,0 +1,69 @@
+body {
+	/*background-color: #993300;*/
+    background-image: url('../Images/Gato-inicio.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+	color: white;
+	font-size: 1.2em;
+}
+
+#topbar {
+	background-color: black;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 69px;
+	margin: 0;
+	padding: 3px 0;
+}
+
+#topbar #left {
+    float: left;
+	width: 50%;
+	margin: 0;
+}
+
+#topbar #left a {
+	padding: 0 10px;
+    margin: 0;
+    font-size: 0;
+    color: white;
+    text-decoration: none;
+    font-family: Impact, Charcoal, sans-serif;
+    display:inline-block;
+    vertical-align: top;
+    text-shadow: 4px 5px 6px black;
+}
+
+#topbar #left .selected {
+    box-shadow: 0 0 3px 5px #AAA;
+    background-color: #AAA;
+}
+
+#topbar #left a:hover {
+    font-size: 1.1em;
+}
+
+#topbar #right {
+    float: right;
+	width: 50%;
+	color: #777;
+	margin: 0;
+    line-height: 63px;
+}
+
+#topbar #right a {
+    color: cyan;
+}
+
+#body {
+	margin: 170px;
+	/*background-color: white;*/
+}
+
+#logo {
+	padding: 10px;
+	/*background-color: white;*/
+}

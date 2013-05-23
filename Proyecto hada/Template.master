@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Template.master.cs" Inherits="Template" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HTFM</title>
+    <link rel="stylesheet" type="text/css" href="Content/style.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div id="topbar">
+			<div id="left">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateURL="~"><img src="Images/home_icon.png" alt="Home" /><br />HOME</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateURL="~/groups.aspx"><img src="Images/groups_icon.png" alt="Groups" class="selected" /><br />GROUPS</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateURL="~/photos.aspx"><img src="Images/photos_icon.png" alt="Photos" /><br />PHOTOS</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateURL="~/videos.aspx"><img src="Images/videos_icon.png" alt="Videos" /><br />VIDEOS</asp:HyperLink>
+                <!-- <asp:HyperLink runat="server" NavigateURL="~">Home</asp:HyperLink>
+				<asp:HyperLink runat="server" NavigateURL="~/groups.aspx">Groups</asp:HyperLink>
+				<asp:HyperLink runat="server" NavigateURL="~/photos.aspx">Photos</asp:HyperLink>
+				<asp:HyperLink runat="server" NavigateURL="~/videos.aspx">Videos</asp:HyperLink>
+				<asp:HyperLink runat="server" NavigateURL="~/shop.aspx">Shop</asp:HyperLink> -->
+			</div>
+			<div id="right">
+				<asp:TextBox id="user" TextMode="SingleLine" Columns="12" runat="server" 
+                    Text="Username" ontextchanged="user_TextChanged" onClick="Click" />
+				<!-- <input type="password" name="pass" value="Password" size="12" /> -->
+                <asp:TextBox id="pass" TextMode="Password" Columns="12" runat="server" Text="Password" />
+				<!-- <input type="submit" value="Login" /> -->
+                <asp:Button Text="Login" runat="server" />
+                <asp:HyperLink runat="server" NavigateURL="~/signup.aspx">Sign up</asp:HyperLink>
+			</div>
+		</div>
+		
+		<div id="body">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+		</div>
+
+    </form>
+    </body>
+</html>
